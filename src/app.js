@@ -22,7 +22,7 @@ app.use(express.static(publicDirectoryPath));
 
 app.get('', (req, res) => {
     res.render('index', {
-        title: 'Weather',
+        title: 'WeatheringWithNodeJS',
         name: 'William Wibowo'
     })
 })
@@ -36,8 +36,8 @@ app.get('/about', (req, res) => {
 
 app.get('/help', (req, res) => {
     res.render('help', {
-        title: 'Help Me',
-        helpText: 'Find William Wibowo Sanity',
+        title: 'Help',
+        helpText: 'To use this apps, please go to the "Weather" page, insert your address on the location form, and click "Search" button or simply press enter.',
         name: 'William Wibowo'
     })
 })
